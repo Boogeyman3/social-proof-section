@@ -1,0 +1,121 @@
+:root{
+--Very-Dark-Magenta: hwb(300 13% 69%);
+--Soft-Pink:hsl(333, 80%, 67%);
+--Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+--Light-Grayish-Magenta: hsl(300, 24%, 96%);
+--White: hsl(0, 0%, 100%);
+
+}
+
+*{
+
+    box-sizing: border-box;
+}
+
+body{
+    background-image:url(images/bg-pattern-bottom-desktop.svg);
+    margin: 0;
+    min-height: 100vh;
+}
+
+.container{
+    background-image: url(images/bg-pattern-top-desktop.svg);
+    margin: 0 auto;
+    width: 1000px;
+    max-width: 100%;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 9rem;
+    flex-wrap: wrap;
+}
+.top h1{
+    font-size: 2.5em;
+    color: var(--Very-Dark-Magenta);
+    font-weight: bold;
+    margin-bottom: 1rem;
+
+}
+.top p{
+    color: var(--Dark-Grayish-Magenta);
+}
+.customer-ratings{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f7f2fb;
+    padding: .7rem .1.5rem;
+    margin-bottom: .8rem;
+    font-size: .7rem;
+    align-items: center;
+    border-radius: 10px;
+
+}
+.ratings-img{
+  margin-right: 1rem;
+}
+.ratings-2st{
+    margin-left: 1rem;
+}
+.ratings-3st{
+    margin-left: 2rem;
+}
+.row{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.info{  
+background-color: var(--Very-Dark-Magenta);
+align-items: center;
+border-radius: 1.5rem;
+padding: 1.5rem;
+width: 32%;
+
+}
+.profile{
+    display: flex;
+    align-items: center;
+}
+.profile-img{
+    width: 50px;
+    height: auto;
+    border-radius: 100px;
+    margin-right: 1rem;
+}
+ .info p{
+    color: var(--White);
+}
+.profile h4{
+    color: var(--Soft-Pink);
+}
+
+@media screen  and (max-width:768px){
+    
+    .top{
+        align-items: center;
+        justify-content: center;
+        padding-left: 3rem;
+      
+    }
+    .customer-ratings{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+       
+    }
+    .info{
+        width: 90%;
+        padding: 0.5rem 3rem;
+        line-height: 1.5;
+        margin-bottom: 1rem;
+    }
+}
